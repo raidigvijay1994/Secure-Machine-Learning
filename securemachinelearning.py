@@ -39,7 +39,7 @@ plt.show()
 X = data.iloc[:, 1:29].values
 y = data.iloc[:, -1].values
 
-# Splitting the dataset into the Training set and Test set
+# Splitting the dataset into the Training set and Test set.
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, random_state = 50)
 
