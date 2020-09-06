@@ -81,7 +81,7 @@ def model_report(y_act, y_pred):
     end_time = time.time()
     eta = end_time - start_time
     
-    #10-fold cross validation score
+    #10-fold cross validation score.
     from sklearn.model_selection import cross_val_score
     accuracy_gausian = cross_val_score(estimator = gnb, X = X_train, y = y_train, cv =10)
     gnb_mean = accuracy_gausian.mean()
