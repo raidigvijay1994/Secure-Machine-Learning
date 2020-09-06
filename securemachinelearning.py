@@ -28,7 +28,7 @@ fraud_data = shuffled_data.loc[shuffled_data['Class'] == 1]
 #Randomly select 866 observations from the non-fraud (majority class).
 non_fraud_data = shuffled_data.loc[shuffled_data['Class'] == 0].sample(n=492,random_state=42)
 
-# Concatenate both dataframes again
+# Concatenate both dataframes again.
 data = pd.concat([fraud_data, non_fraud_data])
 
 plt.figure(figsize=(8, 8))
