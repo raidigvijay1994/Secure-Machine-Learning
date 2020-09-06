@@ -72,7 +72,7 @@ def model_report(y_act, y_pred):
     # Predicting the Test set results
     y_pred = gnb.predict(X_test)
     
-    #Getting the predicting probability
+    #Getting the predicting probability.
     predict_probab = gnb.predict_proba(X_test)
     
     #Geting the log_loss value of the model
