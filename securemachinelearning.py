@@ -247,7 +247,7 @@ for i in range(0,197):
 
 model_report(y_test, y_pred)
 
-#Light GBM - Confusion matrix
+#Light GBM - Confusion matrix.
 from sklearn.metrics import confusion_matrix
 
 labels = ['Genuine', 'Fraud']
