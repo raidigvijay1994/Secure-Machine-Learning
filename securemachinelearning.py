@@ -60,7 +60,7 @@ def model_report(y_act, y_pred):
     plt.show()
     pass
 
-#Importing Time for clalculating the training and testing time
+#Importing Time for clalculating the training and testing time.
     import time
     start_time = time.time()
     
