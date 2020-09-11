@@ -39,7 +39,7 @@ plt.show()
 X = data.iloc[:, 1:29].values
 y = data.iloc[:, -1].values
 
-# Splitting the dataset into the Training set and Test set
+# Splitting the dataset into the Training set and Test set.
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, random_state = 50)
 
@@ -60,7 +60,7 @@ def model_report(y_act, y_pred):
     plt.show()
     pass
 
-#Importing Time for clalculating the training and testing time.
+#Importing Time for clalculating the training and testing time
     import time
     start_time = time.time()
     
