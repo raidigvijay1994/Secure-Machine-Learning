@@ -22,7 +22,7 @@ raw_data = pd.read_csv(io.BytesIO(uploaded['creditcard.csv']))
 
 shuffled_data = raw_data.sample(frac=1,random_state=4)
 
-# Put all the fraud class in a separate dataset.
+# Put all the fraud class in a separate dataset
 fraud_data = shuffled_data.loc[shuffled_data['Class'] == 1]
 
 #Randomly select 866 observations from the non-fraud (majority class).
